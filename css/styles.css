@@ -31,17 +31,21 @@ a {
 a:hover, a:active {
     color: var(--cyan);
 }
-
+html, body {
+    height: 100%;
+}
 body{
     background-color: var(--very-dark-blue-main);
     font-size: 1.125rem;
     font-family: Outfit, sans-serif;
     margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 h1 {
     color: var(--white);
-    font-weight: 600;;
+    font-weight: 600;
 }
 
 hr {
@@ -76,7 +80,7 @@ p {
     background-color: var(--very-dark-blue-card-bg);
     border-radius: 20px;
     margin: 0 auto;
-    width: 40%;
+    width: 25%;
 }
 
 .deadline {
@@ -109,3 +113,20 @@ p {
     justify-content: space-between;
 }
 
+@media (min-width: 901px) and (max-width: 1110px) {
+    .container {
+        width: 35%;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 80%;
+    }
+}
